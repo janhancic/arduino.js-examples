@@ -1,8 +1,7 @@
 (function() {
 	var led;
 
-	function init() {
-		//Declare pins & start app here
+	function init(arduino) {
 		led = new BO.io.LED(arduino, arduino.getDigitalPin(6));
 		led.blink();
 	}

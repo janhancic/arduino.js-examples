@@ -8,6 +8,6 @@
 
 	function onReady(event) {
 		arduino.removeEventListener(BO.IOBoardEvent.READY, onReady);
-		window.arduinojs.init();
+		window.arduinojs(arduino);
 	}
 }());
